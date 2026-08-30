@@ -36,12 +36,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
           <img
-            src={scrolled ? "public/logo-icon-morado.png" : "public/logo-icon-claro.png"}
+            src={scrolled ? "/logo-icon-morado.png" : "/logo-icon-claro.png"}
             alt="Cosmo"
             className={
               scrolled
                 ? "h-8 lg:h-6 w-auto transition-all" // tamaño del logo MORADO (con scroll)
-                : "h-16 lg:h-20 w-auto transition-all" // tamaño del logo BLANCO (arriba)
+                : "h-8 lg:h-6 w-auto transition-all" // tamaño del logo BLANCO (arriba)
             }
           />
         </a>
