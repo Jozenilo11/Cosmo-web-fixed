@@ -2,12 +2,12 @@ import { Instagram as IgIcon } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
 const POSTS = [
-  "Imagenes/Instagram/Post1.jpg",
-  "Imagenes/Instagram/Post2.jpg",
-  "Imagenes/Instagram/Post3.jpg",
-  "Imagenes/Instagram/Post4.jpg",
-  "Imagenes/Instagram/Post5.jpg",
-  "Imagenes/Instagram/Post6.jpg",
+  "/Imagenes/Instagram/Post1.jpg",
+  "/Imagenes/Instagram/Post2.jpg",
+  "/Imagenes/Instagram/Post3.jpg",
+  "/Imagenes/Instagram/Post4.jpg",
+  "/Imagenes/Instagram/Post5.jpg",
+  "/Imagenes/Instagram/Post6.jpg",
 ];
 
 export default function Instagram() {
