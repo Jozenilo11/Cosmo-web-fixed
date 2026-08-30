@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
           <img
-            src={scrolled ? "Log/logo-icon-morado.png" : "Log/LOGO COSMO Fondo (1)-02.png"}
+            src={scrolled ? "public/logo-icon-morado.png" : "public/logo-icon-claro.png"}
             alt="Cosmo"
             className={
               scrolled
