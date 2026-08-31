@@ -2,8 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, BookOpen, Download } from "lucide-react";
 
 // PDF de ejemplo (demo de pdf.js). Reemplaza por la URL de tu revista Cosmo.
-const PDF_URL =
-  "https://raw.githubusercontent.com/mozilla/pdf.js/master/web/compressed.tracemonkey-pldi-09.pdf";
+const PDF_URL = "public/revista/V3_Revista.pdf";
 
 // Carga pdf.js desde el CDN una sola vez.
 function loadPdfJs() {
@@ -88,7 +87,7 @@ export default function Flipbook() {
           <div
             className="relative mx-auto rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.5)] border border-white/10 bg-white"
             style={{
-              aspectRatio: "3 / 4",
+              aspectRatio: "8.26 / 11.69",
               maxWidth: "460px",
               transformStyle: "preserve-3d",
             }}
