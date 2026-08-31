@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, BookOpen, Download } from "lucide-react";
 
 // PDF de ejemplo (demo de pdf.js). Reemplaza por la URL de tu revista Cosmo.
-const PDF_URL = "public/revista/V3_Revista.pdf";
+const PDF_URL = "/V3_Revista.pdf";
 
 // Carga pdf.js desde el CDN una sola vez.
 function loadPdfJs() {
