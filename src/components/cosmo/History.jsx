@@ -1,7 +1,32 @@
+import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
-import { Image } from "@/components/ui/image";
+
+// Pon aquí tus fotos. Deben existir en public/Imagenes/Origen/ con estos
+// nombres exactos (o cambia los nombres aquí para que coincidan con los tuyos).
+// Puedes agregar o quitar líneas: el carrusel se ajusta solo a la cantidad.
+//
+// "position" ajusta qué parte de la foto se ve cuando se recorta:
+// "center 0%" = pegado arriba, "center 50%" = centro, "center 100%" = pegado abajo.
+// Cambia el número de cada foto por separado según le haga falta.
+const PHOTOS = [
+  { src: "/Imagenes/Origen/Josehp.JPG", position: "center 25%" },
+  { src: "/Imagenes/Origen/Samuel.JPG", position: "center 25%" },
+  { src: "/Imagenes/Origen/Isa.JPG", position: "center 25%" },
+];
+
+const INTERVAL_MS = 4000; // cada cuánto cambia de foto (4 segundos)
 
 export default function History() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (PHOTOS.length <= 1) return;
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % PHOTOS.length);
+    }, INTERVAL_MS);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section id="historia" className="py-24 bg-[#f8f6ff]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
@@ -35,13 +60,32 @@ export default function History() {
               <Star size={18} /> Descubre la experiencia
             </a>
           </div>
-          <div className="rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(52,6,84,0.3)] border-2 border-[#92d0d1]/20">
-            <Image
-              src="https://media.base44.com/images/public/6a90db965f92405af700b07c/29ae3376d_generated_e8115487.png"
-              alt="El origen de Cosmo"
-              fittingType="fill"
-              className="w-full h-72 lg:h-96 object-cover"
-            />
+          <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(52,6,84,0.3)] border-2 border-[#92d0d1]/20 h-72 lg:h-96">
+            {PHOTOS.map((photo, i) => (
+              <img
+                key={photo.src}
+                src={photo.src}
+                alt="El origen de Cosmo"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+                style={{ opacity: i === current ? 1 : 0, objectPosition: photo.position }}
+              />
+            ))}
+
+            {PHOTOS.length > 1 && (
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {PHOTOS.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrent(i)}
+                    aria-label={`Foto ${i + 1}`}
+                    className="w-2.5 h-2.5 rounded-full transition-all"
+                    style={{
+                      background: i === current ? "#fff" : "rgba(255,255,255,0.4)",
+                    }}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
