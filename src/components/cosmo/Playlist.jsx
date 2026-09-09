@@ -9,14 +9,21 @@ export default function Playlist() {
     <section className="pt-28 pb-16 px-4">
       <div className="max-w-4xl mx-auto">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
-          <span>COSMO Playlist</span>
-          <Music2
-            size={42}
-            strokeWidth={2}
-            className="inline-block ml-3 mb-2 align-middle text-[#288c84]"
-          />
-        </h2>
+        <h2
+  className="text-4xl sm:text-5xl font-bold text-center mb-8 text-[#2a2c69]"
+  style={{ fontFamily: "'Orbitron', sans-serif" }}
+>
+  COSMO{" "}
+  <span className="bg-gradient-to-r from-[#340654] via-[#2a2c69] to-[#288c84] bg-clip-text text-transparent">
+    Playlist
+  </span>
+
+  <Music2
+    size={42}
+    strokeWidth={2}
+    className="inline-block ml-3 mb-2 align-middle text-[#288c84]"
+  />
+</h2>
 
         <div className="w-full overflow-hidden rounded-2xl shadow-lg bg-black">
           <iframe
