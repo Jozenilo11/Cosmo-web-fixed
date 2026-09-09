@@ -7,7 +7,7 @@ import FadeIn from "./FadeIn";
 // 3. Copia la URL que empieza con https://open.spotify.com/embed/playlist/...
 // 4. Pégala abajo reemplazando el ejemplo.
 const SPOTIFY_EMBED_URL =
-  "https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6?utm_source=generator&theme=0";
+  "https://open.spotify.com/playlist/7dXNMYz3OpesgSuoLlz2cG";
 
 export default function Playlist() {
   return (

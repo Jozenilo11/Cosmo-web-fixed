@@ -4,6 +4,7 @@ import Catalog from "@/components/cosmo/Catalog";
 import Benefits from "@/components/cosmo/Benefits";
 import History from "@/components/cosmo/History";
 import Videos from "@/components/cosmo/Videos";
+import Playlist from "@/components/cosmo/Playlist";
 import Flipbook from "@/components/cosmo/Flipbook";
 import Testimonials from "@/components/cosmo/Testimonials";
 import Faq from "@/components/cosmo/Faq";
@@ -21,6 +22,7 @@ export default function Home() {
       <Benefits />
       <History />
       <Videos />
+      <Playlist />
       <Flipbook />
       <Testimonials />
       <Faq />

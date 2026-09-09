@@ -139,14 +139,14 @@ const rotate = Math.sin(t / 1600) * 2;
       />
       <div
         ref={astroRef}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none will-change-transform"
+        className="absolute inset-0 flex items-center justify-center lg:justify-end pointer-events-none will-change-transform"
         style={{ transformStyle: "preserve-3d" }}
       >
         {url && (
           <img
             src={url}
             alt="Astronauta Cosmo"
-            className="w-[58%] max-w-[400px] select-none drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+            className="w-[58%] max-w-[400px] lg:mr-[6%] select-none drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
             draggable={false}
           />
         )}
