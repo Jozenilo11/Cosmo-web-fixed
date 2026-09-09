@@ -7,7 +7,7 @@ import FadeIn from "./FadeIn";
 // 3. Copia la URL que empieza con https://open.spotify.com/embed/playlist/...
 // 4. Pégala abajo reemplazando el ejemplo.
 const SPOTIFY_EMBED_URL =
-  "https://open.spotify.com/playlist/7dXNMYz3OpesgSuoLlz2cG";
+  "https://open.spotify.com/playlist/1amgPqbUSqdAmnOiCj1oCD?si=DX-6TdcwQceOQB_kpKM0TA&utm_source=whatsapp&pi=HHZFn28CRzyOv";
 
 export default function Playlist() {
   return (
