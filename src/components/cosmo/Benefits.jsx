@@ -77,10 +77,7 @@ export default function Benefits() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {BENEFITS.map((benefit, index) => (
-            <FadeIn
-              key={benefit.title}
-              delay={index * 120}
-            >
+            <FadeIn key={benefit.title}>
               <div
                 className="
                   rounded-3xl
