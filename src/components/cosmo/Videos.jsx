@@ -6,12 +6,12 @@ const VIDEOS = [
   {
     title: "Desconectar para volver",
     desc: "Un viaje del estrés a la calma.",
-    src: "/videos/animacion.mp4",
+    src: "/videos/video.mp4",
   },
   {
     title: "COSMO: una pausa para ti",
     desc: "Descubre la experiencia COSMO y encuentra tu momento de calma.",
-    src: "/videos/video.mp4",
+    src: "/videos/animacion.mp4",
   },
   {
     title: "Tu calma en una lata",
