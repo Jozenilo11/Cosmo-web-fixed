@@ -31,7 +31,7 @@ export default function SoundButton() {
 
     audio.volume = 0;
 
-    const targetVolume = 0.25;
+    const targetVolume = 0.55;
     const duration = 1500;
     const steps = 30;
     const stepTime = duration / steps;
