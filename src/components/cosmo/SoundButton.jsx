@@ -7,9 +7,9 @@ export default function SoundButton() {
   const fadeRef = useRef(null);
 
   useEffect(() => {
-    const audio = new Audio("/sounds/cosmo-space.mp3");
+    const audio = new Audio("/sounds/cosmo-space-18min.mp3");
 
-    audio.loop = true;
+    audio.loop = false;
     audio.volume = 0;
 
     audioRef.current = audio;
