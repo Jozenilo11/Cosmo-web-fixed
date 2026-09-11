@@ -2,7 +2,7 @@ import React from "react";
 import { Music2 } from "lucide-react";
 
 const SPOTIFY_EMBED_URL =
-  "https://open.spotify.com/embed/playlist/1amgPqbUSqdAmnOiCj1oCD?utm_source=generator";
+  "https://open.spotify.com/playlist/2CHNeTOc37g2ri9ZCl24az?si=jzI8xiJsS9i9LFGk_yx3ig&utm_source=copy-link&pi=Jwmh_qBCQ92kO";
 
 export default function Playlist() {
   return (

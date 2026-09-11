@@ -13,6 +13,7 @@ import Contact from "@/components/cosmo/Contact";
 import Footer from "@/components/cosmo/Footer";
 import SoundButton from "@/components/cosmo/SoundButton";
 
+
 export default function Home() {
   return (
     <div className="bg-[#f8f6ff] overflow-x-hidden">
