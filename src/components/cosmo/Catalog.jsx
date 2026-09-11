@@ -101,7 +101,7 @@ export default function Catalog() {
             <div
               key={p.name}
               onMouseMove={onCardMove}
-              className="group relative overflow-hidden bg-white rounded-3xl p-7 text-center border-2 border-[#92d0d1]/15 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-3 hover:border-transparent hover:shadow-[0_20px_60px_rgba(42,44,105,0.15)] transition-all duration-300"
+              className="group relative overflow-hidden bg-white rounded-3xl p-7 text-center border-2 border-[#92d0d1]/15 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-3 hover:border-transparent hover:shadow-[0_20px_60px_rgba(42,44,105,0.15)] transition-all duration-300 flex flex-col"
             >
               {/* Glow de color detrás de la lata que crece al hover */}
               <div
@@ -150,11 +150,11 @@ export default function Catalog() {
                 {p.price}
               </span>
               <button
-                onClick={() => openBuy(p)}
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-[#288c84] text-[#288c84] text-sm font-bold hover:bg-gradient-to-r hover:from-[#340654] hover:to-[#288c84] hover:text-white hover:border-transparent transition-all"
-              >
-                <ShoppingBag size={16} /> Comprar
-              </button>
+  onClick={() => openBuy(p)}
+  className="mt-auto inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-[#288c84] text-[#288c84] text-sm font-bold hover:bg-gradient-to-r hover:from-[#340654] hover:to-[#288c84] hover:text-white hover:border-transparent transition-all"
+>
+  <ShoppingBag size={16} /> Comprar
+</button>
             </div>
           ))}
         </div>
