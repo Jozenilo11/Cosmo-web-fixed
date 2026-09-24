@@ -1,9 +1,9 @@
 // Redes sociales de Cosmo (íconos Font Awesome). Actualiza los links de Facebook y YouTube cuando los tengas.
 const SOCIALS = [
-  { className: "fab fa-facebook-f", label: "Facebook", href: "#" },
+  { className: "fab fa-facebook-f", label: "Facebook", href: "https://www.facebook.com/share/1BxzWainHx/?mibextid=wwXIfr" },
   { className: "fab fa-instagram", label: "Instagram", href: "https://www.instagram.com/cosmo.oficial0" },
   { className: "fab fa-tiktok", label: "TikTok", href: "https://www.tiktok.com/@cosmodrinks" },
-  { className: "fab fa-youtube", label: "YouTube", href: "#" },
+  
 ];
 
 export default function Footer() {
