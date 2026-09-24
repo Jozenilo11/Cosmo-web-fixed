@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { ChevronRight, Sparkles } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const AstronautHero = lazy(() => import("@/components/ui/astronaut-hero"));
 
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 w-full pt-24 pb-16">
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[#92d0d1] text-xs font-bold tracking-widest uppercase mb-6">
-              <Sparkles size={14} /> Bebida relajante premium
+             Bebida relajante premium
             </div>
             <h1
               className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-white"

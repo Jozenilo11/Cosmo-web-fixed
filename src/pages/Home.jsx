@@ -3,6 +3,7 @@ import Hero from "@/components/cosmo/Hero";
 import Catalog from "@/components/cosmo/Catalog";
 import Benefits from "@/components/cosmo/Benefits";
 import History from "@/components/cosmo/History";
+import CharactersSection from "@/components/CharactersSection";
 import Videos from "@/components/cosmo/Videos";
 import Playlist from "@/components/cosmo/Playlist";
 import Flipbook from "@/components/cosmo/Flipbook";
@@ -22,6 +23,7 @@ export default function Home() {
       <Catalog />
       <Benefits />
       <History />
+      <CharactersSection />
       <Videos />
       <Playlist />
       <Flipbook />
