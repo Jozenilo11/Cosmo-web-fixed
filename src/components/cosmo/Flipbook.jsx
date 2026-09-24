@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, BookOpen, Download, Volume2 } from "lucide-react";
 
-const PDF_URL = "/revista/V3_Revista2.pdf";
+const PDF_URL = "/revista/VF_Revista.pdf";
 const FLIP_SOUND_URL = "/sounds/page-flip.mp3";
 
 function loadPdfJs() {
